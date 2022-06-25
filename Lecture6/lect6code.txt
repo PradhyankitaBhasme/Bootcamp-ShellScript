@@ -1,0 +1,782 @@
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ nano ForLoopMonthSalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ ./ForLoopMonthSalary.sh
++ PartTime=1
++ FullTime=2
++ TotalSalary=0
++ EmpRatePerHr=20
++ NumOfWorkingDays=20
++ (( day=1 ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=240
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=240
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=400
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=400
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=400
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=480
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=560
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=560
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=720
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=800
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=960
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=960
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=1120
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=1120
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=1200
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=1200
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=1280
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=1280
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=1440
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=1440
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=1600
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=1760
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=1920
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=2080
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2080
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2080
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=2160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=2320
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=2400
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=2560
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2560
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=2720
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=2720
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=2880
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=3040
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=3120
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=3280
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=3440
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=3520
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=3520
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=3680
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=3680
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=3680
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=3840
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=3920
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=4000
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=4160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=4160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=4320
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=4480
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=4480
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=4480
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=4640
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=4800
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=4880
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=4880
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=4880
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=4880
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=5040
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=5120
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=5200
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=5280
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=5440
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=5440
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=5520
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=5680
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=5840
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=5840
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=5920
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=5920
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=6080
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=6080
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=6160
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=6320
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=6400
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=6560
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=6640
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=6640
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=6640
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=6720
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=6800
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=6880
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=6960
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=6960
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=7120
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=7280
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=7440
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=7600
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=0
++ case $EmpCheck in
++ EmpHrs=0
++ salary=0
++ TotalSalary=7600
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=7760
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=2
++ case $EmpCheck in
++ EmpHrs=8
++ salary=160
++ TotalSalary=7920
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=8000
++ (( days++  ))
++ (( day<=20 ))
++ EmpCheck=1
++ case $EmpCheck in
++ EmpHrs=4
++ salary=80
++ TotalSalary=8080
++ (( days++  ))
++ (( day<=20 ))
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ nano while.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ ./while.sh
++ valid=true
++ count=1
++ '[' true ']'
++ echo 1
+1
++ '[' 1 -eq 3 ']'
++ (( count++ ))
++ '[' true ']'
++ echo 2
+2
++ '[' 2 -eq 3 ']'
++ (( count++ ))
++ '[' true ']'
++ echo 3
+3
++ '[' 3 -eq 3 ']'
++ break
+ 
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ nano func.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ ./func.sh
+Failed
+./func.sh: line 12: syntax error near unexpected token `done'
+./func.sh: line 12: `done'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ nano func.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ ./func.sh
+++ myfunc 1
+++ echo 1
++ result=1
++ '[' 1 -eq 1 ']'
++ echo success
+success
+./func.sh: line 13: syntax error near unexpected token `done'
+./func.sh: line 13: `done'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ nano func.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ ./func.sh
+++ myfunc 0
+++ echo 0
++ result=0
++ '[' 0 -eq 1 ']'
++ echo Failed
+Failed
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture6 (main)
+$ ./func.sh
+++ myfunc 1
+++ echo 1
++ result=1
++ '[' 1 -eq 1 ']'
++ echo success
+success
