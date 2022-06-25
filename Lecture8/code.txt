@@ -12,3 +12,25 @@ Apple Banana Orange
 + echo 0 1 2
 0 1 2
 
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture8 (main)
+$ ./dict.sh
+bash: ./dict.sh: /usr/local/bin/bash: bad interpreter: No such file or directory
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture8 (main)
+$ nano dict.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture8 (main)
+$ ./dict.sh
++ declare -A sounds
++ sounds[dog]=bark
++ sounds[cow]=moo
++ sounds[bird]=tweet
++ sounds[wolf]=howl
++ echo 'Dog sound ' bark
+Dog sound  bark
++ echo 'All animal sound ' bark howl moo tweet
+All animal sound  bark howl moo tweet
++ echo 'Animal ' dog wolf cow bird
+Animal  dog wolf cow bird
++ echo 'Number of animals ' 4
+Number of animals  4
