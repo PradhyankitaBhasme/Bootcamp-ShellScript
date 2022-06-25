@@ -1,0 +1,69 @@
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ nano array1RANDOM.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ ./array1RANDOM.sh
+4
+0
+0
+7
+1
+0
+1
+7
+8
+8
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ nano array2Dice.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ ./array2Dice.sh
+1
+2
+0
+2
+1
+4
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ nano array2TwoDice.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ nano array3TwoDice.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ ./array3TwoDice.sh
+4
+2
+
+5
+1
+
+2
+1
+
+2
+4
+
+1
+5
+
+4
+0
+
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ nano array4FiveAvgSum.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A5 (main)
+$ ./array4FiveAvgSum.sh
+89
+41
+47
+2
+70
+the sum is:  168
+the average:  84
