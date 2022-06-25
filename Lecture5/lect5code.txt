@@ -1,0 +1,457 @@
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano add.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./add.sh
++ x=100
++ y=100
+./add.sh: line 4: syntax error near unexpected token `('
+./add.sh: line 4: `z=(( $x + $y ))'
++ echo
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano add.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./add.sh
++ x=100
++ y=100
+./add.sh: line 4: syntax error near unexpected token `('
+./add.sh: line 4: `z= (( $x + $y ))'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano add.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./add.sh
++ x=100
++ y=100
+./add.sh: line 4: syntax error near unexpected token `('
+./add.sh: line 4: `z= ( ( $x + $y ) )'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano add.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./add.sh
++ x=100
++ y=100
+++ 100 + 100
+./add.sh: line 4: 100: command not found
++ z=
++ echo
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano add.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./add.sh
++ x=100
++ y=100
+++ 100 + 100
+./add.sh: line 4: 100: command not found
++ z=
++ echo
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano add.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./add.sh
++ x=100
++ y=100
++ z=200
++ echo 200
+200
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ useraAdd.sh
+bash: useraAdd.sh: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nanouseraAdd.sh
+bash: nanouseraAdd.sh: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano useraAdd.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./useraAdd.sh
++ read -p 'Enter first number' x
+Enter first number23
++ read -p 'Enter second number' y
+Enter second number34
++ z=57
++ echo The Addition of two numbers is 57
+The Addition of two numbers is 57
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ (( RANDOM ))
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano random.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./random.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano random.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./random.sh
+./random.sh: line 1: syntax error near unexpected token `('
+./random.sh: line 1: `x= (( Random % 10 ))'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=
++ 1
+./empWage.sh: line 3: 1: command not found
+./empWage.sh: line 8: syntax error: unexpected end of file
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=
++ 0
+./empWage.sh: line 3: 0: command not found
++ 'if[1 -eq ]'
+./empWage.sh: line 4: if[1 -eq ]: command not found
+./empWage.sh: line 5: syntax error near unexpected token `then'
+./empWage.sh: line 5: `then'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=
++ 0
+./empWage.sh: line 3: 0: command not found
++ 'if[1 -eq ]'
+./empWage.sh: line 4: if[1 -eq ]: command not found
+./empWage.sh: line 5: syntax error near unexpected token `then'
+./empWage.sh: line 5: `then'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=
++ 0
+./empWage.sh: line 3: 0: command not found
++ 'if[1 -eq ]'
+./empWage.sh: line 4: if[1 -eq ]: command not found
+./empWage.sh: line 5: syntax error near unexpected token `then'
+./empWage.sh: line 5: `then'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=
++ 0
+./empWage.sh: line 3: 0: command not found
+./empWage.sh: line 9: syntax error: unexpected end of file
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=
++ 0
+./empWage.sh: line 3: 0: command not found
++ '[' 1 -eq ']'
+./empWage.sh: line 4: [: 1: unary operator expected
++ echo 'Employee is absent.'
+Employee is absent.
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
+++ RANDOM%2
+./empWage.sh: line 3: RANDOM%2: command not found
++ randomCk=
++ '[' 1 -eq ']'
+./empWage.sh: line 4: [: 1: unary operator expected
++ echo 'Employee is absent.'
+Employee is absent.
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=0
++ '[' 1 -eq 0 ']'
++ echo 'Employee is absent.'
+Employee is absent.
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=0
++ '[' 1 -eq 0 ']'
++ echo 'Employee is absent.'
+Employee is absent.
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano empWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./empWage.sh
++ Present=1
++ randomCk=1
++ '[' 1 -eq 1 ']'
++ echo 'Employee is Present.'
+Employee is Present.
++ ERatePHour=200
++ EHrsWorking=8
++ salary=1600
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano PartTimeWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
+bash: ./PartTimeWage.sh: bin/bash: bad interpreter: No such file or directory
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano PartTimeWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
+bash: ./PartTimeWage.sh: bin/bash: bad interpreter: No such file or directory
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano PartTimeWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ randomCheck=1
+./PartTimeWage.sh: line 10: syntax error near unexpected token `else'
+./PartTimeWage.sh: line 10: `else'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano PartTimeWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=0
+./PartTimeWage.sh: line 11: syntax error near unexpected token `else'
+./PartTimeWage.sh: line 11: `else'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano PartTimeWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=0
+./PartTimeWage.sh: line 11: syntax error near unexpected token `else'
+./PartTimeWage.sh: line 11: `else'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano PartTimeWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=0
++ '[' 1 -eq 0 ']'
++ '[' 2 -eq 0 ']'
++ workingHrs=0
+./PartTimeWage.sh: line 15: *0: syntax error: operand expected (error token is "*0")
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ nano PartTimeWage.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=0
++ '[' 1 -eq 0 ']'
++ '[' 2 -eq 0 ']'
++ workingHrs=0
++ salary=0
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=0
++ '[' 1 -eq 0 ']'
++ '[' 2 -eq 0 ']'
++ workingHrs=0
++ salary=0
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=0
++ '[' 1 -eq 0 ']'
++ '[' 2 -eq 0 ']'
++ workingHrs=0
++ salary=0
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=2
++ '[' 1 -eq 2 ']'
++ '[' 2 -eq 2 ']'
++ workingHrs=4
++ salary=800
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=0
++ '[' 1 -eq 0 ']'
++ '[' 2 -eq 0 ']'
++ workingHrs=0
++ salary=0
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=2
++ '[' 1 -eq 2 ']'
++ '[' 2 -eq 2 ']'
++ workingHrs=4
++ salary=800
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./PartTimeWage.sh
++ presentFullTime=1
++ presentPartTime=2
++ ratePerHr=200
++ randomCheck=1
++ '[' 1 -eq 1 ']'
++ workingHrs=8
++ salary=1600
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$  nano case.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture5 (main)
+$ ./case.sh
++ PartTimeEmp=1
++ FullTimeEmp=2
++ empRatePerHr=200
++ empCheck=0
++ case $empCheck in
++ empHrs=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
