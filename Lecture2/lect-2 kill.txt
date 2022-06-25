@@ -1,0 +1,568 @@
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ nano -T 3 Hello.java
+(***using nano editor to dreate Hello.java****)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+abc.txt       def.txt     QuickLinks/  Temp/
+Assignment1/  hello.java  script1.sh
+CopyFiles.sh  Practise/   Shell/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ nano hello.java
+(***using nano editor to create Hello.java****)
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java hello.java
+(****running java program***)
+
+Hello World
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java hello.java &
+(****running java program in background***)
+
+[1] 2067
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+(***viewing the jobs running in the background***)
+[1]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ bg %1
+(***to check whether job 1 is running in background or not***)
+bash: bg: job 1 already in background
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java hello.java &
+(***job 2 running in the background with process id 2083**)
+[2] 2083
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+[1]-  Running                 java hello.java &
+[2]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ kill %2
+(***killing job 2 as we no longer need it***)
+[2]+  Terminated              java hello.java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ java hello.java &
+[1] 2114
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+[1]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ps -elf | grep java |grep -v grep
+(***grepping the java process***)
+   rapen    2114    1944 cons0    09:12:39 /c/Program Files/Common Files/Oracle/Java/javapath/java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+[1]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ killall java
+(****killing all jobs which are of java***)
+bash: killall: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+kill %1
+(***killig the job 1****)
+[1]+  Terminated              java hello.java
+
+
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ java HelloWorld.java
+Hello World
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ HelloWorld.java &
+[1] 802
+bash: HelloWorld.java: command not found
+[1]+  Exit 127                HelloWorld.java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ kill %1
+bash: kill: %1: no such job
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ kill 1%
+bash: kill: 1%: arguments must be process or job IDs
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ jobs
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ HelloWorld.java &
+[1] 823
+bash: HelloWorld.java: command not found
+[1]+  Exit 127                HelloWorld.java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ jobs
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ java HelloWorld.java &
+[1] 834
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+jobs
+[1]+  Running                 java HelloWorld.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ kill %1
+[1]+  Terminated              java HelloWorld.java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf
+     UID     PID    PPID  TTY        STIME COMMAND
+   rapen     850     772 cons0    11:53:05 /usr/bin/ps
+   rapen     772       1 cons0    11:30:13 /usr/bin/bash
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf | more
+bash: more: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ java HelloWorld.java &
+[1] 863
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+jakill %1
+[1]+  Terminated              java HelloWorld.java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ java HelloWorld.java &
+[1] 874
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ java HelloWorld.java &Hello World
+  ps -elf | grep java | grep -v grep
+   rapen     874     772 cons0    11:58:29 /c/Program Files/Common Files/Oracle/Java/javapath/java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+Hello World
+Hello World
+bg 1%
+bash: bg: 1%: no such job
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ bg %1]
+bash: bg: %1]: no such job
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+bg %1
+bash: bg: job 1 already in background
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+bgps -elf | grep java | grep -v grep | awk Hello World
+'{print $2}'
+874
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+Hello World
+ps -elf | grep java | grep -v grep | awk '{print $3}'
+772
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf | grep java | grep -v grep | awk '{print $1}'
+rapen
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf | grep java | grep -v grep | awk '{print $4}'
+cons0
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+Hello World
+Hello World
+psps -elf | more
+bash: more: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+Hello World
+Hello World
+ps -elf | Hello World
+
+     UID     PID    PPID  TTY        STIME COMMAND
+   rapen     874     772 cons0    11:58:29 /c/Program Files/Common Files/Oracle/Java/javapath/java
+   rapen     946     772 cons0    12:06:03 /usr/bin/ps
+   rapen     772       1 cons0    11:30:13 /usr/bin/bash
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf | more
+bash: more: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf |
+> more
+bash: more: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+ps -elf |
+>
+> Hello World
+
+> ^C
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf | Hello World
+bash: Hello: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+ps -elf | Hello World
+
+> more
+bash: more: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf | more
+bash: more: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ps -elf | More
+bash: More: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+echo "$!"
+874
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+Hello World
+Hello World
+ps
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     1004     772    1004      10952  cons0     197609 12:12:26 /usr/bin/ps
+      874     772     874       1524  cons0     197609 11:58:29 /c/Program Files/Common Files/Oracle/Java/javapath/java
+      772       1     772      12104  cons0     197609 11:30:13 /usr/bin/bash
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+pHello World
+ps -eaf | grep java
+   rapen     874     772 cons0    11:58:29 /c/Program Files/Common Files/Oracle/Java/javapath/java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+$ Hello World
+psps -elf | moreHello World
+
+>
+> moore
+bash: moore: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+kill %1
+[1]+  Terminated              java HelloWorld.java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ java HelloWorld.java &
+[1] 1029
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+li;; -9 ps -elf | grep java | grep -v grep | awkHello World
+pHello World
+ribt $2}
+bash: syntax error near unexpected token `;;'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ li;; -9 ps -elf | grep java | grep -v grep | awk` {print $2}
+bash: syntax error near unexpected token `;;'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ li;; -9 ps -elf | grep java | grep -v grep | awHello World2}
+
+
+bash: syntax error near unexpected token `;;'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ li;; -9 ps -elf | grep java | grep -v grep | awk`{print $2}
+bash: syntax error near unexpected token `;;'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ li;; -9 ps -elf | grep java | grep -v grep | awk Hello World
+'{pr
+bash: syntax error near unexpected token `;;'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ li;; -9 ps -elf | grep java | grep -v grep | awk '{print $2}
+bash: syntax error near unexpected token `;;'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ kill -9 ps -elf | grep java | grep -v grep | awk '{print $2}
+> Hello World
+print $2}s -elf | grep java | grep -v grep | awk '{p
+bash: kill: ps: arguments must be process or job IDs
+bash: kill: -elf: arguments must be process or job IDs
+awk: cmd. line:2: kill -9 ps -elf | grep java | grep -v grep | awk {print
+awk: cmd. line:2:                   ^ syntax error
+awk: cmd. line:2: kill -9 ps -elf | grep java | grep -v grep | awk {print
+awk: cmd. line:2:                               ^ syntax error
+awk: cmd. line:2: kill -9 ps -elf | grep java | grep -v grep | awk {print
+awk: cmd. line:2:                                              ^ syntax error
+awk: cmd. line:2: kill -9 ps -elf | grep java | grep -v grep | awk {print
+awk: cmd. line:2:                                                        ^ unexpected newline or end of string
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ li;; -9 ps -Hello Worldjava | grep -v grep | awk` {print $2}
+
+bash: syntax error near unexpected token `;;'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Kill -9 'ps -elf | grep java | grep -v grep | awk`
+{print $2}
+>
+> Hello World
+^C
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Kill -9 'ps -elf | grep java | grep -v grep | awk'
+{print $2}
+
+Kill: illegal pid: ps -elf | grep java | grep -v grep | awk
+Kill: illegal pid: {print
+Kill: illegal pid: }
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Kill -9 'ps -elf | grep java | grep -v grep | awk' {print $1}
+Kill: illegal pid: ps -elf | grep java | grep -v grep | awk
+Kill: illegal pid: {print
+Kill: illegal pid: }
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+jobs
+[1]+  Running                 java HelloWorld.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Kill -9 'ps -elf | grep java | grep -v grep | awk Hello World
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Kill -9 'ps -elf | grep java | grep -v grep | awk '{print $1}'
+> Hello World
+{print $1}`
+>
+>
+> ^C
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Kill -9 'ps -elf | grep java | grep -v grep | awk '{print $1}'
+Kill -9 'ps -elf | grep java | grep -v grep | awk '{print $1}`
+
+>
+> ^C
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Kill -9 'ps -elf | grep java | grep -v grep | awk '{pKill -9 'ps -elf | grep java | grep -v grep | awk'
+{print $2}
+Kill: illegal pid: ps -elf | grep java | grep -v grep | awk
+Kill: illegal pid: {print
+Kill: illegal pid: }
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+kill -9 `ps -elf | grep java | grepHello World
+{print $2}'awk '
+> ^C
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ kill -9 `ps -elf | grep java | grep -v grep | awk '{print $2}Hello World
+`'
+>
+>
+>
+>
+>
+> ^C
+
+$ kill -9 `ps -elf | grep java | grep -v grep | awk '{print $2}`'
+$ kill -9 `ps -elf | grep java | grep -v grep | awk '{print $2}`'
+
+
+
+Hello World
+> ^C
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ kill -9 `ps -elf | grep java | grep -v grep Hello World
+$ kill -9 `ps -elf | grep java | grep -v grep | awk '{print $1}'`
+bash: kill: rapen: arguments must be process or job IDs
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+jobs
+[1]+  Running                 java HelloWorld.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+Hello World
+Hello World
+Hello World
+kill %1
+[1]+  Terminated              java HelloWorld.java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ jobs
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ history | grep java
+   33  nano hello.java
+   34  java hello.java
+   35  nano hello.java
+   36  java hello.java
+   38  java -version
+   39  ps -elf |grep java
+   40  java hello.java
+   41  ps -elf |grep java
+   42  java hello.java
+   43  java hello.java
+   44  ps -elf |grep java | grep -v grep
+   47  ps -elf |grep java
+   48  ps -elf |grep java | grep -v grep
+   50  ps -elf |grep java | grep -v grep | awk
+   51  java hello.java&
+   52   ps -elf |grep java
+   53  ps -elf |grep java | grep -v grep
+   54  java hello.java bg
+   55  ps -elf |grep java
+   56  java hello.java
+   61  java hello.java
+   62  java hello.java &
+   98  nano hello.java
+   99  java hello.java
+  100  java hello.java &
+  102  java hello.java &
+  113  java HelloWorld.java
+  114  HelloWorld.java &
+  118  HelloWorld.java &
+  120  java HelloWorld.java &
+  125  java HelloWorld.java &
+  127  java HelloWorld.java &
+  128  ps -elf | grep java | grep -v grep
+  132  ps -elf | grep java | grep -v grep | awk '{print $2}'
+  133  ps -elf | grep java | grep -v grep | awk '{print $3}'
+  134  ps -elf | grep java | grep -v grep | awk '{print $1}'
+  135  ps -elf | grep java | grep -v grep | awk '{print $4}'
+  147  ps -eaf | grep java
+  150  java HelloWorld.java &
+  151  li;; -9 ps -elf | grep java | grep -v grep | awk` {pribt $2}
+  152  li;; -9 ps -elf | grep java | grep -v grep | awk` {print $2}
+  153  li;; -9 ps -elf | grep java | grep -v grep | awk` {print $2}
+  154  li;; -9 ps -elf | grep java | grep -v grep | awk`{print $2}
+  155  li;; -9 ps -elf | grep java | grep -v grep | awk '{print $2}
+  156  li;; -9 ps -elf | grep java | grep -v grep | awk '{print $2}
+  157* kill -9 ps -elf | grep java | grep -v grep | awk '{print $2}
+  158  li;; -9 ps -elf | grep java | grep -v grep | awk` {print $2}
+  159  Kill -9 'ps -elf | grep java | grep -v grep | awk` {print $2}
+  160  Kill -9 'ps -elf | grep java | grep -v grep | awk' {print $2}
+  161  Kill -9 'ps -elf | grep java | grep -v grep | awk' {print $1}
+  163  Kill -9 'ps -elf | grep java | grep -v grep | awk '{print $1}'
+Kill -9 'ps -elf | grep java | grep -v grep | awk '{print $1}`
+  164  Kill -9 'ps -elf | grep java | grep -v grep | awk '{print $1}'
+Kill -9 'ps -elf | grep java | grep -v grep | awk '{print $1}`
+  165  Kill -9 'ps -elf | grep java | grep -v grep | awk' {print $2}
+  166  kill -9 `ps -elf | grep java | grep -v grep | awk '{print $2}'
+  167  kill -9 `ps -elf | grep java | grep -v grep | awk '{print $2}`'
+  168  kill -9 `ps -elf | grep java | grep -v grep | awk '{print $2}`'
+  169  kill -9 `ps -elf | grep java | grep -v grep | awk '{print $1}'`
+  173  history | grep java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ history | grep sh
+   37  bash -version
+  174  history | grep sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ history | grep python
+  175  history | grep python
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ echo $mupid
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ echo $mypid
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ java HelloWorld.java &
+[1] 1213
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+echo $mypid
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ mypid= `ps -Hello World
+elf | grep java | grep -v grep | awk Hello World
+'{print $2}'`Hello World
+
+bash: 1213: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ mypid= `ps -elf | grep java | grep -v grep | awk '{print $2}'`
+bash: 1213: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ myHello Worldf | grep java | grep -v grep | awk '{print $2}'`
+P
+bash: 1213: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ myPid= `ps -elf | grep java | grep -v grep | awk '{print $2}'`
+bash: 1213: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ myPid=`ps -elf | grep java | grep -v grep | awk '{print $2}'`
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ ecHello World
+ho myPid
+myPid
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ echo $myPid
+1213
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg (main)
+$ Hello World
+kill -9 $myPid
+[1]+  Killed                  java HelloWorld.java
