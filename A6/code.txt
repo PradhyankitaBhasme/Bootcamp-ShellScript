@@ -1,0 +1,33 @@
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A6 (main)
+$ nano prime.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A6 (main)
+$ ./prime.sh
+Enter Number : 2355
+2355 is not a prime number.
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A6 (main)
+$ ./prime.sh
+Enter Number : 2
+2 is a prime number.
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A6 (main)
+$ nano factorial.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A6 (main)
+$ ./factorial.sh
+Enter a number
+23
+8128291617894825984
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A6 (main)
+$ nano palindrome.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/A6 (main)
+$ ./palindrome.sh
+Enter the number
+34
+43
+Number is not palindrome
