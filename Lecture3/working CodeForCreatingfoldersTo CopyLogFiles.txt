@@ -1,0 +1,15 @@
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/folder (main)
+$ for file in `ls *.txt`
+> do
+> folderName= echo $file | awk -F. '{print $1}' ;
+> echo $folderName
+> done
+abc
+
+efg
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/folder (main)
+$ for file in `ls *.txt`; do folderName= echo $file | awk -F. '{print $1}' ;  mkdir -p '$folderName'; done
+abc
+efg
