@@ -1,0 +1,20 @@
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/SHELL (main)
+$ cd --
+
+rapen@Pradnyas-laptop MINGW64 ~ (main)
+$ cd ~/QuickLink
+
+rapen@Pradnyas-laptop MINGW64 ~/QuickLink (main)
+$ ls
+
+rapen@Pradnyas-laptop MINGW64 ~/QuickLink (main)
+$ ln -s C:/Users/rapen/OneDrive/Desktop/SHELL
+
+rapen@Pradnyas-laptop MINGW64 ~/QuickLink (main)
+$ ls
+SHELL/
+
+rapen@Pradnyas-laptop MINGW64 ~/QuickLink (main)
+$ ls SHELL
+shrtcuts.pdf

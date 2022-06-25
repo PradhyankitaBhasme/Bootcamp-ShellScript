@@ -1,0 +1,74 @@
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/SHELL (main)
+$ ls
+code2.txt  shrtcuts.pdf
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/SHELL (main)
+$ head code2.txt
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ mkdir Rose
+(***make a new directory named Rose***)
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+(*****Rose named directory can be seen in the listed files and folders****)
+abc.txt  Assignment1/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  Rose/  script1.sh  Shell/  temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/SHELL (main)
+$ head -20 code2.txt
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ mkdir Rose
+(***make a new directory named Rose***)
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+(*****Rose named directory can be seen in the listed files and folders****)
+abc.txt  Assignment1/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  Rose/  script1.sh  Shell/  temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ rm -r Rose
+(***Rose named directory is removed****)
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ls
+
+abc.txt  Assignment1/  CopyFiles.sh  def.txt  hello.java  Practise/  QuickLinks/  script1.sh  Shell/  temp/
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/SHELL (main)
+$ tail -20 code2.txt
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ ps -elf | grep java |grep -v grep
+(***grepping the java process***)
+   rapen    2114    1944 cons0    09:12:39 /c/Program Files/Common Files/Oracle/Java/javapath/java
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+jobs
+[1]+  Running                 java hello.java &
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ killall java
+(****killing all jobs which are of java***)
+bash: killall: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+kill %1
+(***killig the job 1****)
+[1]+  Terminated              java hello.java
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/SHELL (main)
+$ tail -10 code2.txt
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ killall java
+(****killing all jobs which are of java***)
+bash: killall: command not found
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/shell_script (master)
+$ Hello World
+kill %1
+(***killig the job 1****)
+[1]+  Terminated              java hello.java
