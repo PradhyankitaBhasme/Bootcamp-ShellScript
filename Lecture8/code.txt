@@ -1,4 +1,3 @@
-
 rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture8 (main)
 $ nano arraysample.sh
 
@@ -13,5 +12,3 @@ Apple Banana Orange
 + echo 0 1 2
 0 1 2
 
-rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture8 (main)
-$ nano dictionaries.sh
