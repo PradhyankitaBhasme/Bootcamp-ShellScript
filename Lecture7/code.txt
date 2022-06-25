@@ -1,0 +1,280 @@
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano arraysample.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./arraysample.sh
++ counter=0
++ fruits[((counter++))]=Apple
++ fruits[((counter++))]=Banana
++ fruits[((counter++))]=Orange
++ echo
+
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano arraysample.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./arraysample.sh
++ counter=0
++ fruits[((counter++))]=Apple
++ fruits[((counter++))]=Banana
++ fruits[((counter++))]=Orange
++ echo Apple Banana Orange
+Apple Banana Orange
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ chmod +x arraysample.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./arraysample.sh
++ counter=0
++ fruits[((counter++))]=Apple
++ fruits[((counter++))]=Banana
++ fruits[((counter++))]=Orange
++ echo Apple Banana Orange
+Apple Banana Orange
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano dailyMonthlySalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalary.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
++ [[ '' -lt 4 ]]
++ [[ 0 -lt 20 ]]
++ (( TotalWorkingDays++ ))
++ EmpCheck=0
+++ GetWorkHrs 0
+++ local 0=0
+./dailyMonthlySalary.sh: line 12: local: `0=0': not a valid identifier
+++ case $EmpCheck in
+++ empHrs=0
+++ echo
++ EmpHrs=
+./dailyMonthlySalary.sh: line 33: +: syntax error: operand expected (error token is "+")
+./dailyMonthlySalary.sh: line 34: *200: syntax error: operand expected (error token is "*200")
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ chmod +x dailyMonthlySalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalary.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
++ [[ '' -lt 4 ]]
++ [[ 0 -lt 20 ]]
++ (( TotalWorkingDays++ ))
++ EmpCheck=0
+++ GetWorkHrs 0
+++ local 0=0
+./dailyMonthlySalary.sh: line 12: local: `0=0': not a valid identifier
+++ case $EmpCheck in
+++ empHrs=0
+++ echo
++ EmpHrs=
+./dailyMonthlySalary.sh: line 33: +: syntax error: operand expected (error token is "+")
+./dailyMonthlySalary.sh: line 34: *200: syntax error: operand expected (error token is "*200")
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano dailyMonthlySalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalary.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
+./dailyMonthlySalary.sh: line 34: syntax error near unexpected token `('
+./dailyMonthlySalary.sh: line 34: `     DailyWage[$TotalWorkingDays]=(($EmpHrs*$EmpRatePerHr));'
+./dailyMonthlySalary.sh: line 35: syntax error near unexpected token `done'
+./dailyMonthlySalary.sh: line 35: `done'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano dailyMonthlySalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalary.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
+./dailyMonthlySalary.sh: line 34: syntax error near unexpected token `('
+./dailyMonthlySalary.sh: line 34: `     DailyWage[$TotalWorkingDays]=(($EmpHrs*$EmpRatePerHr));'
+./dailyMonthlySalary.sh: line 35: syntax error near unexpected token `done'
+./dailyMonthlySalary.sh: line 35: `done'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano dailyMonthlySalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalary.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
+./dailyMonthlySalary.sh: line 34: syntax error near unexpected token `('
+./dailyMonthlySalary.sh: line 34: `     DailyWage[$TotalWorkingDays]=(($EmpHrs*$EmpRatePerHr));'
+./dailyMonthlySalary.sh: line 35: syntax error near unexpected token `done'
+./dailyMonthlySalary.sh: line 35: `done'
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano dailyMonthlySalary.sh
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano dailyMonthlySalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano dailyMonthlySalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalary.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
++ [[ '' -lt 4 ]]
++ [[ 0 -lt 20 ]]
++ (( TotalWorkingDays++ ))
++ EmpCheck=2
+++ GetWorkHrs 2
+++ local 2=2
+./dailyMonthlySalary.sh: line 12: local: `2=2': not a valid identifier
+++ case $EmpCheck in
+++ EmpHrs=8
+++ echo 8
++ EmpHrs=8
++ TotalEmpHrs=8
++ DailyWage[$TotalWorkingDays]=1600
++ [[ 8 -lt 4 ]]
++ TotalSalary=1600
++ echo 1600
+1600
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalary.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
++ [[ '' -lt 4 ]]
++ [[ 0 -lt 20 ]]
++ (( TotalWorkingDays++ ))
++ EmpCheck=2
+++ GetWorkHrs 2
+++ local 2=2
+./dailyMonthlySalary.sh: line 12: local: `2=2': not a valid identifier
+++ case $EmpCheck in
+++ EmpHrs=8
+++ echo 8
++ EmpHrs=8
++ TotalEmpHrs=8
++ DailyWage[$TotalWorkingDays]=1600
++ [[ 8 -lt 4 ]]
++ TotalSalary=1600
++ echo 1600
+1600
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalary.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
++ [[ '' -lt 4 ]]
++ [[ 0 -lt 20 ]]
++ (( TotalWorkingDays++ ))
++ EmpCheck=0
+++ GetWorkHrs 0
+++ local 0=0
+./dailyMonthlySalary.sh: line 12: local: `0=0': not a valid identifier
+++ case $EmpCheck in
+++ EmpHrs=0
+++ echo 0
++ EmpHrs=0
++ TotalEmpHrs=0
++ DailyWage[$TotalWorkingDays]=0
++ [[ 0 -lt 4 ]]
++ [[ 1 -lt 20 ]]
++ (( TotalWorkingDays++ ))
++ EmpCheck=2
+++ GetWorkHrs 2
+++ local 2=2
+./dailyMonthlySalary.sh: line 12: local: `2=2': not a valid identifier
+++ case $EmpCheck in
+++ EmpHrs=8
+++ echo 8
++ EmpHrs=8
++ TotalEmpHrs=8
++ DailyWage[$TotalWorkingDays]=1600
++ [[ 8 -lt 4 ]]
++ TotalSalary=1600
++ echo 0 1600
+0 1600
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano dailyMonthlySalary.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ nano dailyMonthlySalaryWithFunctionCall.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture7 (main)
+$ ./dailyMonthlySalaryWithFunctionCall.sh
++ PartTime=1
++ FullTime=2
++ MaxHrsInMonth=4
++ EmpRatePerHr=200
++ NumOfWorkingDays=20
++ TotalEmpHr=0
++ TotalWorkingDays=0
++ [[ '' -lt 4 ]]
++ [[ 0 -lt 20 ]]
++ (( TotalWorkingDays++ ))
++ EmpCheck=1
+++ GetWorkHrs 1
+++ local 1=1
+./dailyMonthlySalaryWithFunctionCall.sh: line 12: local: `1=1': not a valid identifier
+++ case $EmpCheck in
+++ EmpHrs=4
+++ echo 4
++ EmpHrs=4
++ TotalEmpHrs=4
++ DailyWage[$TotalWorkingDays]=800
++ [[ 4 -lt 4 ]]
++ TotalSalary=800
++ echo 800
+800
