@@ -1,0 +1,17 @@
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture8 (main)
+$ nano arraysample.sh
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture8 (main)
+$ ./arraysample.sh
++ counter=0
++ fruits[((counter++))]=Apple
++ fruits[((counter++))]=Banana
++ fruits[((counter++))]=Orange
++ echo Apple Banana Orange
+Apple Banana Orange
++ echo 0 1 2
+0 1 2
+
+rapen@Pradnyas-laptop MINGW64 ~/OneDrive/Desktop/Assg/Lecture8 (main)
+$ nano dictionaries.sh
